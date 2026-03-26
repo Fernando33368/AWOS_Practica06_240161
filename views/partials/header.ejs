@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title><%= title %></title>
+  <link href="/css/output.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: radial-gradient(circle at top, #0f172a, #020617);
+    }
+
+    .glass {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+  </style>
+</head>
+
+<body class="text-white min-h-screen">
+
+<!-- NAVBAR -->
+<nav class="flex justify-between items-center px-6 py-4 glass border-b border-gray-800">
+
+  <!-- LOGO -->
+  <h1 class="text-xl font-semibold bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent">
+    AWOS System
+  </h1>
+
+  <!-- LINKS -->
+  <div class="flex items-center gap-6 text-sm text-gray-300">
+
+    <a href="/" class="hover:text-white transition">
+      Inicio
+    </a>
+
+    <a href="/ai" class="hover:text-blue-400 transition">
+      IA
+    </a>
+
+    <a href="/payment" class="hover:text-emerald-400 transition">
+      Pagos
+    </a>
+
+    <a href="/planner" class="hover:text-indigo-400 transition">
+      Planner
+    </a>
+  </div>
+</nav>
+<div class="container mx-auto p-6">
