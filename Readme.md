@@ -143,7 +143,7 @@
 | *2* | Configuración Tailwind (UI Moderna) | ✅ Terminado |
 | *3* | Middlewares y servidor | ✅ Terminado |
 | *4* | Integración APIs (Stripe, IA, Google) | ✅ Terminado |
-| *5* | Desarrollo de vistas | ❌ |
+| *5* | Desarrollo de vistas | ✅ Terminado |
 | *6* | Sistema de autenticación | ❌ |
 | *7* | Integración completa | ❌ |
 | *8* | Pruebas y documentación | ❌ |
