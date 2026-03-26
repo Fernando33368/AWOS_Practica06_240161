@@ -23,7 +23,7 @@
   ],
   "author": "Fernando Miguel Perez",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/Fernando33368/AWOS_Practica06_240161/issues"
   },

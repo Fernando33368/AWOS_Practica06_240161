@@ -2,9 +2,9 @@
 
 <div class="max-w-xl mx-auto p-8 rounded-2xl shadow-xl border border-gray-800 bg-gray-900/60 backdrop-blur">
 
-  <h2 class="text-2xl text-blue-400 mb-6 flex items-center gap-2 font-semibold">
+  <i><h2 class="text-2xl text-cyan-400 font-semibold">
     Sistema de Pago
-  </h2>
+  </h2></i>
 
   <form id="form" class="space-y-4">
 
@@ -21,7 +21,7 @@
     </select>
 
     <button id="btn"
-      class="w-full py-3 rounded-xl text-white font-medium bg-gradient-to-r from-blue-500 to-indigo-500 hover:opacity-90 transition">
+      class="w-full py-3 rounded-xl text-white font-medium bg-gradient-to-r from-blue-500 to-indigo-500 hover:opacity-90 transition bg-gradient-to-r from-purple-600 to-cyan-500 px-4 py-2 rounded  w-full">
       Pagar ahora
     </button>
 
@@ -46,7 +46,7 @@ form.addEventListener('submit', async (e) => {
 
   const amount = document.getElementById('amount').value;
 
-  btn.innerText = "Procesando...";
+  btn.innerText = "🔄 Procesando...";
   btn.disabled = true;
   status.innerHTML = "Generando sesión segura...";
 
@@ -60,7 +60,7 @@ form.addEventListener('submit', async (e) => {
     const data = await res.json();
 
     if (!data.id) {
-      throw new Error("No se recibió session ID");
+      throw new Error("⚠️ No se recibió session ID");
     }
 
     status.innerHTML = "Redirigiendo a Stripe...";
@@ -69,7 +69,7 @@ form.addEventListener('submit', async (e) => {
 
   } catch (error) {
     console.error(error);
-    status.innerHTML = "Error al realizar el pago";
+    status.innerHTML = "⚠️ Error al realizar el pago";
     btn.innerText = "Pagar";
     btn.disabled = false;
   }

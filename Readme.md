@@ -119,19 +119,19 @@
 # Pruebas del sistema
 
 ## Prueba 1: Vista Principal
-<img src="" width="400px" height="200">
+![Checkout](./public/img/PruebaInicio.png)
 
 ## Prueba 2: Pago con Stripe
-<img src="" width="400" height="200">
+![Checkout](./public/img/Prueba1.png)
 
 ## Prueba 3: AI
-<img src="" width="400" height="200">
+![Checkout](./public/img/Prueba2.png)
 
 ## Prueba 4: 
-<img src="" width="400" height="200">
+![Checkout](./public)
 
 ## Prueba 5:
-<img src="" width="400" height="200">
+![Checkout](./public)
 
 ---
 
@@ -146,4 +146,4 @@
 | *5* | Desarrollo de vistas | ✅ Terminado |
 | *6* | Sistema de autenticación | ✅ Terminado |
 | *7* | Integración completa | ✅ Terminado |
-| *8* | Pruebas y documentación | En proceso |
+| *8* | Pruebas y documentación | ✅ Terminado |
