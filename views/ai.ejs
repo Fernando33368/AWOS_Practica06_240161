@@ -1,0 +1,25 @@
+<%- include('partials/header', { title: 'IA' }) %>
+
+<div class="max-w-2xl mx-auto glass p-6 rounded-xl">
+
+  <h2 class="text-xl text-blue-400 mb-4">Asistente IA</h2>
+
+  <form method="POST" action="/ai/generate">
+    <input name="prompt"
+      class="w-full p-3 bg-gray-800 text-white rounded mb-2 border border-gray-700 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none transition"
+      placeholder="Escribe tu mensaje...">
+      
+    <button class="bg-gradient-to-r from-blue-500 to-indigo-500 px-4 py-2 rounded w-full text-white font-medium hover:opacity-90 transition">
+      Enviar
+    </button>
+  </form>
+
+  <% if (response) { %>
+    <div class="mt-4 bg-gray-800 p-4 rounded border border-gray-700 text-gray-200">
+      <%= response %>
+    </div>
+  <% } %>
+
+</div>
+
+<%- include('partials/footer') %>

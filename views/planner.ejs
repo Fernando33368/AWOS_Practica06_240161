@@ -1,0 +1,68 @@
+<%- include('partials/header', { title: 'Planner' }) %>
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<!-- EVENTOS -->
+<div class="p-6 rounded-2xl border border-gray-800 bg-gray-900/60 backdrop-blur">
+  <h2 class="text-blue-400 text-xl mb-4 font-semibold">🗓️Eventos</h2>
+
+  <% if (events && events.length) { %>
+    <% events.forEach(e => { %>
+
+      <div class="bg-gray-800 p-4 rounded-xl mb-3 border border-gray-700 flex justify-between items-center hover:-translate-y-1 hover:shadow-lg transition">
+
+        <!-- INFO -->
+        <div>
+          <p class="font-semibold text-white"><%= e.summary || "Sin título" %></p>
+          <p class="text-sm text-gray-400">
+            <%= e.start?.dateTime || e.start?.date %>
+          </p>
+        </div>
+
+        <!-- ELIMINAR -->
+        <form method="POST" action="/planner/delete/<%= e.id %>"
+          onsubmit="return confirm('¿Eliminar este evento?')">
+
+          <button 
+            class="bg-red-500/80 px-3 py-1 rounded-lg text-white hover:bg-red-600 transition">
+          </button>
+
+        </form>
+
+      </div>
+
+    <% }) %>
+  <% } else { %>
+    <p class="text-gray-400">No hay eventos</p>
+  <% } %>
+
+</div>
+
+<!-- CREAR -->
+<div class="p-6 rounded-2xl border border-gray-800 bg-gray-900/60 backdrop-blur">
+  <h2 class="text-indigo-400 text-xl mb-4 font-semibold">➕ Nuevo Evento</h2>
+
+  <form method="POST" action="/planner/create" class="space-y-3">
+    
+    <input name="title" placeholder="Título"
+      class="w-full p-3 rounded-xl bg-gray-800 text-white border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 outline-none transition"
+      required>
+
+    <input type="datetime-local" name="start"
+      class="w-full p-3 rounded-xl bg-gray-800 text-white border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 outline-none transition"
+      required>
+
+    <input type="datetime-local" name="end"
+      class="w-full p-3 rounded-xl bg-gray-800 text-white border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 outline-none transition"
+      required>
+
+    <button class="w-full py-3 rounded-xl text-white font-medium bg-gradient-to-r from-indigo-500 to-blue-500 hover:opacity-90 transition">
+      Crear Evento
+    </button>
+
+  </form>
+</div>
+
+</div>
+
+<%- include('partials/footer') %>
