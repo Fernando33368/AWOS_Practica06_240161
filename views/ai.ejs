@@ -2,20 +2,20 @@
 
 <div class="max-w-2xl mx-auto glass p-6 rounded-xl">
 
-  <h2 class="text-xl text-blue-400 mb-4">Asistente IA</h2>
+  <i><h2 class="text-2xl text-violet-500 font-semibold">Asistente IA</h2></i>
 
   <form method="POST" action="/ai/generate">
     <input name="prompt"
-      class="w-full p-3 bg-gray-800 text-white rounded mb-2 border border-gray-700 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none transition"
+      class="w-full p-3 text-black rounded mb-2"
       placeholder="Escribe tu mensaje...">
       
-    <button class="bg-gradient-to-r from-blue-500 to-indigo-500 px-4 py-2 rounded w-full text-white font-medium hover:opacity-90 transition">
+    <button class="bg-gradient-to-r from-purple-600 to-cyan-500 px-4 py-2 rounded  w-full">
       Enviar
     </button>
   </form>
 
   <% if (response) { %>
-    <div class="mt-4 bg-gray-800 p-4 rounded border border-gray-700 text-gray-200">
+    <div class="mt-4 bg-gray-900 p-4 rounded border border-purple-500">
       <%= response %>
     </div>
   <% } %>
