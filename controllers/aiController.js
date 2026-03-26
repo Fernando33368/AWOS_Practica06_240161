@@ -1,4 +1,4 @@
-import openai from '../config/openai.js';
+import openai from '../config/openia.js';
 
 const render = (req, res) => {
   res.render('ai', { response: null });
