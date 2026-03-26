@@ -146,4 +146,4 @@
 | *5* | Desarrollo de vistas | ✅ Terminado |
 | *6* | Sistema de autenticación | ✅ Terminado |
 | *7* | Integración completa | ✅ Terminado |
-| *8* | Pruebas y documentación | ❌ |
+| *8* | Pruebas y documentación | En proceso |
