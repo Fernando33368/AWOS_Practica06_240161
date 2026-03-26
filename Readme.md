@@ -139,8 +139,8 @@
 
 | Ramas | Descripción | Estatus |
 |------|------------|--------|
-| *1* | Configuración inicial (Node + Express) | ❌ |
-| *2* | Configuración Tailwind (UI futurista) | ❌ |
+| *1* | Configuración inicial (Node + Express) | ✅ Terminado |
+| *2* | Configuración Tailwind (UI Moderna) | ✅ Terminado |
 | *3* | Middlewares y servidor | ❌ |
 | *4* | Integración APIs (Stripe, IA, Google) | ❌ |
 | *5* | Desarrollo de vistas | ❌ |
