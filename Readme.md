@@ -142,7 +142,7 @@
 | *1* | Configuración inicial (Node + Express) | ✅ Terminado |
 | *2* | Configuración Tailwind (UI Moderna) | ✅ Terminado |
 | *3* | Middlewares y servidor | ✅ Terminado |
-| *4* | Integración APIs (Stripe, IA, Google) | 🕓 En proceso |
+| *4* | Integración APIs (Stripe, IA, Google) | ✅ Terminado |
 | *5* | Desarrollo de vistas | ❌ |
 | *6* | Sistema de autenticación | ❌ |
 | *7* | Integración completa | ❌ |
