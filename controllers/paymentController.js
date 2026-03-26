@@ -27,8 +27,8 @@ export const createPayment = async (req, res) => {
         }
       ],
 
-      success_url: 'http://localhost:4000/payment?success=true',
-      cancel_url: 'http://localhost:4000/payment?cancel=true'
+      success_url: 'http://localhost:40161/payment?success=true',
+      cancel_url: 'http://localhost:40161/payment?cancel=true'
     });
 
     res.json({ id: session.id });
