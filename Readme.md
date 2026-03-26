@@ -144,6 +144,6 @@
 | *3* | Middlewares y servidor | ✅ Terminado |
 | *4* | Integración APIs (Stripe, IA, Google) | ✅ Terminado |
 | *5* | Desarrollo de vistas | ✅ Terminado |
-| *6* | Sistema de autenticación | ❌ |
-| *7* | Integración completa | ❌ |
+| *6* | Sistema de autenticación | ✅ Terminado |
+| *7* | Integración completa | ✅ Terminado |
 | *8* | Pruebas y documentación | ❌ |
