@@ -36,7 +36,7 @@
 <script src="https://js.stripe.com/v3/"></script>
 
 <script>
-const stripe = Stripe("pk_test_51TFFa2L4f7Dhc3FSW8QD3OUZMWCUz6SKMi1kQQMY139CzweJBmiqAlyIT0AN4Al8RFn9aOZDuoGUi2WA6PHgQEN400bUWAdtTw");
+const stripe = Stripe("pk_test_51TFTKj2KhNcEeosIpr6Sa7nXxs7xhHebCuaw8nYSTY6aWTYm07ErtTcptOwE2zvDkJkfFYNm5gjfLrDImOvp16T700dCh6zVuL");
 
 const form = document.getElementById('form');
 const btn = document.getElementById('btn');
@@ -45,20 +45,34 @@ const status = document.getElementById('status');
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
 
-  const amount = document.getElementById('amount').value;
-  const tipo = document.getElementById('tipo').value;
-  const metodo = document.getElementById('metodo').value;
+
 
   btn.innerText = "🔄 Procesando...";
   btn.disabled = true;
   status.innerHTML = "Generando sesión segura...";
 
   try {
+    const amount = parseInt(document.getElementById('amount').value);
+    const tipo = document.getElementById('tipo').value;
+    const metodo = document.getElementById('metodo').value;
+
+    if(!amount || amount <= 0) {
+      status.innerHTML = "⚠️ Ingresa un monto válido";
+      btn.innerText = "Pagar ahora";
+      btn.disabled = false;
+      return;
+    }
+
     const res = await fetch('/payment/create', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ amount, tipo, metodo })
     });
+
+    if (!res.ok) {
+      const errorText = await res.text();
+      throw new Error(errorText);
+    }
 
     const data = await res.json();
 

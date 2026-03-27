@@ -749,10 +749,6 @@ video {
   --tw-gradient-to: #06b6d4 var(--tw-gradient-to-position);
 }
 
-.to-indigo-500 {
-  --tw-gradient-to: #6366f1 var(--tw-gradient-to-position);
-}
-
 .p-3 {
   padding: 0.75rem;
 }

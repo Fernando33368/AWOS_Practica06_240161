@@ -33,6 +33,51 @@
 
 ---
 
+## Estructura de la Practica: 
+
+>|- **config** <br>
+> &nbsp;&nbsp; |__ openia.js <br>
+> &nbsp;&nbsp; |__ passport.js <br>
+>|- **controllers** <br>
+> &nbsp;&nbsp; |__ aiController.js <br>
+> &nbsp;&nbsp; |__ paymentController.js <br>
+> &nbsp;&nbsp; |__ plannerController.js <br>
+>|- **node_modules** <br>
+> &nbsp;&nbsp; |__ Tiene varias carpetas <br>
+>|- **public** <br>
+> &nbsp;&nbsp; |_ **css** <br>
+> &nbsp;&nbsp;&nbsp;&nbsp; |__ input.css <br>
+> &nbsp;&nbsp;&nbsp;&nbsp; |__ output.css <br>
+> &nbsp;&nbsp; |_ **img** <br>
+> &nbsp;&nbsp;&nbsp;&nbsp; |__ PantallaInicio.png <br>
+> &nbsp;&nbsp;&nbsp;&nbsp; |__ Prueba01.png <br>
+> &nbsp;&nbsp;&nbsp;&nbsp; |__ Prueba02.png <br>
+> &nbsp;&nbsp;&nbsp;&nbsp; |__ Prueba03.png <br>
+> &nbsp;&nbsp;&nbsp;&nbsp; |__ Prueba04.png <br>
+> &nbsp;&nbsp;&nbsp;&nbsp; |__ Prueba05.png <br>
+>|- **routes** <br>
+> &nbsp;&nbsp; |_ aiRoutes.js <br>
+> &nbsp;&nbsp; |_ paymentRoutes.js <br>
+> &nbsp;&nbsp; |_ plannerRoutes.js <br>
+>|- **services** <br>
+> &nbsp;&nbsp; |_ googleService.js <br>
+>|-**views** <br>
+> &nbsp;&nbsp; |_ **partials** <br>
+> &nbsp;&nbsp;&nbsp;&nbsp; |__ footer.ejs <br>
+> &nbsp;&nbsp;&nbsp;&nbsp; |__ header.ejs <br>
+> &nbsp;&nbsp; |__ ai.ejs <br>
+> &nbsp;&nbsp; |__ index.ejs <br>
+> &nbsp;&nbsp; |__ payment.ejs <br>
+> &nbsp;&nbsp; |__ planner.ejs <br>
+>|- **.env** <br>
+>|- **.gitignore** <br>
+>|- **app.js** <br>
+>|- **package-lock.json** <br>
+>|- **package.json** <br>
+>|- **postcss.config.js** <br>
+>|- **Readme.md** <br>
+>|- **tailwind.config.js** <br>
+
 # Endpoints
 
 ## Stripe (20)
@@ -119,19 +164,35 @@
 # Pruebas del sistema
 
 ## Prueba 1: Vista Principal
-![Checkout](./public/img/PruebaInicio.png)
+<p>Esta es la pantalla principal en donde hay diferentes plataformas en linea.</p>
+
+![Checkout](./public/img/PantallaInicio.png)
 
 ## Prueba 2: Pago con Stripe
-![Checkout](./public/img/Prueba1.png)
+<p>Estas son las pantallas en donde se hizo la simulacion de un pago en linea.</p>
+
+- En esta parte tuve complicacion (⚠️ Un error) en una linea en la que no me llevava a la segunda prueba.
+
+* Esta es la *Prueba1*
+![Checkout](./public/img/Prueba01.png)
+
+* Esta es la *Prueba2*
+![Checkout](./public/img/Prueba02.png)
 
 ## Prueba 3: AI
-![Checkout](./public/img/Prueba2.png)
+<p>Estas es la pantalla de una Inteligencia Artificial gratis en linea.</p>
 
-## Prueba 4: 
-![Checkout](./public)
+* Esta es la *Prueba3*
+![Checkout](./public/img/Prueba03.png)
 
-## Prueba 5:
-![Checkout](./public)
+## Prueba 4: Google Calendar
+<p>Estas es la pantalla en donde se puede realizar la creacion de eventos y agregarle tanto la fecha y hora de inicio como la fecha y hora final.</p>
+
+* Esta es la *Prueba4*
+![Checkout](./public/img/Prueba04.png)
+
+* Esta es la *Prueba5*
+![Checkout](./public/img/Prueba05.png)
 
 ---
 

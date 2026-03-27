@@ -27,6 +27,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use('/ai', aiRoutes);
+app.use('/payment', paymentRoutes);
 app.get('/payment', (req, res) => {
   const { success, cancel } = req.query;
 
